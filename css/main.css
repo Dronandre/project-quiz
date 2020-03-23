@@ -36,6 +36,8 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 .plate {
+  position: absolute;
+  z-index: 5;
   width: 1170px;
   height: 545px;
   display: -webkit-box;
@@ -644,6 +646,43 @@ body {
 }
 .hidden {
   display: none;
+}
+.fullscreen-bg {
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
 }
 .mt-0 {
   margin-top: 0;
